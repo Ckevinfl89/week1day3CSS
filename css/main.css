@@ -1,0 +1,31 @@
+.container {  
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30vh 40vh 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Nav-Area Nav-Area Nav-Area Nav-Area Nav-Area Nav-Area"
+      ". Profile-Pix Profile-info Profile-info Profile-info ."
+      ". Post Post Post Post .";
+  }
+  
+  .Nav-Area {
+     grid-area: Nav-Area; 
+    }
+  
+  .Profile-Pix {
+     grid-area: Profile-Pix;
+     }
+  
+  .Profile-info { 
+    grid-area: Profile-info;
+ }
+  
+  .Post { 
+    grid-area: Post;
+    height: 2000px;
+ }
+  
+ 
